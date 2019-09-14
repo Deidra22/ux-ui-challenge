@@ -1,0 +1,46 @@
+/* Font Merriweather */
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700&display=swap');
+
+body{
+    background-image: url("/img/marble.jpg");
+    height: 100vh;
+    font-family: 'Merriweather', serif;
+    /*parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-fluid{
+    margin-top: 50px;
+}
+.gray-trans-back{
+    background-color: rgba(128, 128, 128, 0.51);
+}
+.box-shadow{
+    box-shadow: 2px 2px 2px 2px #808080;
+}
+.title-box{
+    height: 300px;
+}
+.title-text{
+    font-size: 100px;
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.475);
+}
+.slogan{
+    font-size: 15px;
+}
+.nav{
+    margin-top: 25px;
+}
+a.nav-link{
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .title-text{
+        font-size: 50px;
+    }
+}
