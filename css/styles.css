@@ -10,12 +10,10 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    &.in-transition {
-        transition: transform 9000ms ease;
-      }
 }
 .gray-trans-back{
-    background-color: rgba(118, 115, 115, 0.605);
+    /* background-color: rgba(118, 115, 115, 0.605); */
+    background-color: #bde9e9c6;
 }
 .box-shadow{
     box-shadow: 2px 2px 2px 2px #808080;
@@ -27,14 +25,13 @@ body{
 .title-text{
     font-size: 150px;
     color: #000000;
-    text-shadow: 3px 3px rgb(144, 140, 140);
+    text-shadow: 3px 3px rgb(56, 74, 74);
 }
 .slogan{
     font-size: 15px;
 }
 /* Arrow down Indicators */
 .indicator{
-    /* z-index: 10; */
     position: absolute;
     width: 25px;
     height: 25px;
@@ -48,7 +45,7 @@ body{
     border: none;
     border-right: 3px solid #000000;
     border-bottom: 3px solid #000000;
-    animation: animate 1s linear infinite;
+    animation: animate 2s linear infinite;
 }
 .indicator span:nth-child(1){
     top: -10px;
@@ -67,10 +64,10 @@ body{
 }
 /* END Arrow down Indicators */
 .ux-ui{
-    height: 500px;
+    margin: 30px 0;
 }
 .fill{
-    height: 200px;
+    height: 500px;
 }
 
 
@@ -89,10 +86,11 @@ body{
 }
 
 @media only screen and (max-width: 600px){
-    .title-box{
-        
-    }
     .title-text{
         font-size: 50px;
+    }
+    .ux-ui{
+        font-size: 35px;
+        
     }
 }
