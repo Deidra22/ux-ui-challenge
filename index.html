@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid trans-back">
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg row navbar-dark bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -29,18 +29,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Our Team</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-link" href="#">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </nav>
         <!-- NavBar End -->
         <!-- Title Box -->
-        <div class="white-trans-back title-box row d-flex flex-column justify-content-center">
+        <div class="title-box row d-flex flex-column justify-content-center">
             <div class="d-flex flex-column align-items-center">
                 <div class="title-text font-weight-bold">
                     Firm Design
                 </div>
                 <div class="slogan text-center font-italic font-weight-bold">
-                    Making sure your impact is grounbreaking
+                    Creating an impact with UX/UI
                 </div>
             </div>
             <a class="indicator js-btn d-flex flex-column align-self-center">
@@ -51,37 +54,81 @@
         </div>
         <!-- End Title Box -->
         <!-- UX and UI  -->
-        <h1 class="ux-ui d-flex justify-content-center">
-            <u> What is UX and UI?</u>
-        </h1>
-        <div class="row d-flex flex-row justify-content-around">
-            <div class="ux col-md-5 text-center">
-                <h2 class="font-weight-bold">UX</h2>
-                <h3><u> User Experience</u></h3>
-                <p class="text-justify col-md-12 d-flex justify-content-center">
-                    This is a products ability to
-                    provide a user with a simple, efficient, and enjoyable experience. Often considered the bones
-                    and structure of design.
-                </p>
+        <div class="row white-trans">
+            <div class="js-section row margin-60 d-flex flex-row justify-content-around align-items-center">
+                <div class="img-box col-md-4 col-lg-4 d-flex justify-content-center">
+                    <img src="img/UX-UI-.jpg" alt="" class="image b-rad-3">
+                    <div class="overlay1 d-flex flex-column justify-content-center">
+                        <h2 class="font-weight-bold text-center brain-text">
+                            <u> User Experience</u>
+                        </h2>
+                        <h4 class="line-height text-center font-weight-bold d-flex align-items-center brain-text ">
+                            This is a products ability to provide a user with a simple, efficient, and enjoyable
+                            experience. Often considered the bones and structure of design.
+                        </h4>
+                    </div>
+                </div>
+                <div class="img-box col-md-4 col-lg-4 d-flex  justify-content-center">
+                    <img src="img/UX-UI-3.jpg" alt="" class="image b-rad-3">
+                    <div class="overlay2 d-flex flex-column justify-content-center">
+                        <h2 class="font-weight-bold text-center brain-text">
+                            <u>User Interface</u>
+                        </h2>
+                        <h4 class="line-height text-center font-weight-bold d-flex align-items-center brain-text">
+                            The look and presence of a product.
+                            It will vary depending on the target audience. This is known as the appearance and
+                            personality
+                            of a design.
+                        </h4>
+                    </div>
+                </div>
+                <div>
+                    <img class="dev-img" src="img/software-development.png" alt="">
+                </div>
             </div>
-            <div class="ui js-section col-md-5 text-center">
-                <h2 class="font-weight-bold">UI</h2>
-                <h3><u> User Interface</u></h3>
-                <p class="text-justify col-md-12 d-flex justify-content-center">
-                    The look and presence of a product.
-                    It will vary depending on the target audience. This is known as the appearance and personality
-                    of a design.
-                </p>
+            <div class="container-fluid d-flex flex-column justify-content-center">
+                <div class="row d-flex justify-content-around ">
+                    <div class="col-md-5 b-rad-3 white-trans example">
+
+                    </div>
+                    <div class="col-md-5 b-rad-3 white-trans example">
+
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Us -->
+            <div class="container-fluid b-rad-3 margin-60 d-flex flex-row justify-content-center">
+                <form class="contact-form col-md-6">
+                    <h2>Contact Us</h2>
+                    <div class="form-row">
+                        <div class="col-6">
+                            <label for="Name">First Name</label>
+                            <input type="text" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col-6">
+                            <label for="Name">Last Name</label>
+                            <input type="text" class="form-control" placeholder="Last name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCompany">Company Name</label>
+                            <input type="name" class="form-control" id="inputCompany" placeholder="Company">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Questions</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success ">Lets Talk</button>
+                </form>
             </div>
         </div>
+        <footer class="row footer">
 
-        <div class=" row d-flex flex-column justify-content-center">
-            <div class="example-1 col-md-8 ">
-
-            </div>
-        </div>
-
-
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

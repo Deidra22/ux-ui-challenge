@@ -11,20 +11,22 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* Start Title Box */
-.white-trans-back{
-    background-color: rgba(255, 255, 255, 0.544);
+.trans-back{
+    background-image: linear-gradient(-80deg,rgba(45, 150, 186, 0.734), rgba(199, 36, 36, 0.734));
+    /* background-color: rgba(255, 255, 255, 0.544);*/
 }
+/* Start Title Box */
 .title-box{
     height: calc(100vh - 55px);
 }
 .title-text{
     font-size: 150px;
-    color: #000000;
-    text-shadow: 2px 2px rgb(120, 121, 121);
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .slogan{
-    font-size: 15px;
+    font-size: 25px;
+    color: #ffffff;
 }
 /* Arrow down Indicators */
 .indicator{
@@ -60,29 +62,67 @@ body{
 }
 /* END Arrow down Indicators */
 /* END Title Box */
-.ux-ui{
-    margin: 30px 0;
+.margin-60{
+    margin: 60px 0px;
 }
-.fill{
-    height: 500px;
+.b-rad-3{
+    border-radius: 3px;
 }
-.ux, .ui{
-    padding: 20px;
-    border-radius: 5px;
-    line-height: 40px;
-}
-.ux{
-    background-color: black;
-    color: white;
-}
-.ui{
-    background-color: white;
-}
-.imgs{
-    height:350px;
-    width: 200px;
+/*UX UI HOVER */
+.line-height{
+    line-height: 50px;
 }
 
+.img-box {
+    padding: 0;
+    box-shadow: 4px 4px rgba(32, 31, 31, 0.522);
+}
+.image {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+.overlay1, .overlay2 {
+    position: absolute;
+    padding: 15px;
+    height: 500px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.brain-text{
+    color: #ffffff;
+}
+.overlay1{
+    background-color: rgba(45, 150, 186, 0.734);
+}
+.img-box:hover .overlay1 {
+    opacity: 1;
+}
+.overlay2 {
+    background-color: rgba(199, 36, 36, 0.734);
+}
+.img-box:hover .overlay2 {
+    opacity: 1;
+}
+/* END UX UI HOVER */
+.white-trans{
+    background-color: rgba(255, 255, 255, 0.68);
+}
+.example{
+    height: 400px;
+    padding: 0;
+}
+/* Contact Form */
+.contact-form{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+}
+/* END Contact Form */
+.footer{
+    height: 200px;
+    background-color: #343a40;
+}
 
 
 @keyframes animate{
@@ -103,10 +143,28 @@ body{
     .title-text{
         font-size: 50px;
     }
-    .ux-ui{
-        font-size: 35px;  
+    .line-height{
+        line-height: 30px;
     }
-    .ux, .ui{
-        margin: 10px 0px;
+    .img-box{
+        box-shadow: none;
+
     }
-}
+    .image {
+        margin-top: 20px;
+        height: 300px;
+        width: 300px;
+      }
+    .overlay1, .overlay2 {
+        margin-top: 20px;
+        height: 300px;
+        width: 300px;
+      }
+      .dev-img{
+        height: 600px;
+        width: 100%;
+    }
+    .example{
+        margin: 20px 0px;
+    }
+    }
