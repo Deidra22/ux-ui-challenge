@@ -1,4 +1,5 @@
-function scrollIt(element) {  
+// Scroll down button
+function scrollDown(element) {  
     window.scrollTo({
       'behavior': 'smooth',
       'left': 0,
@@ -11,5 +12,35 @@ function scrollIt(element) {
   const sections = document.querySelectorAll('.js-section');
   
   btns[0].addEventListener('click', () => {
-    scrollIt(sections[0]);
+    scrollDown(sections[0]);
   });
+
+// Slide In 
+// function debounce(func, wait = 20, immediate = true){
+//     let timeout;
+//     return function(){
+//         const context = this, args = arguments;
+//         const later = function(){
+//             timeout = null;
+//             if(!immediate) func.apply(context.args);
+//         };
+//         const callNow = immediate && !timeout;
+//         clearTimeout(timeout);
+//         timeout = setTimeout(later, wait);
+//         if(callNow) func.apply(context.args);
+//     };
+// };
+
+
+//   const sliderDivs = document.querySelectorAll('.slide-in');
+//   function checkSlide(e){
+//     console.log(window.scrollY);
+//       sliderDivs.forEach(slideDiv =>{
+//         const slideInAt = (window.scrollY + window.innerHeight) - slideDiv.height / 2;
+//         console.log(slideInAt);
+//       });
+//   }
+
+//   window.addEventListener('scroll', debounce(checkSlide));
+
+ 

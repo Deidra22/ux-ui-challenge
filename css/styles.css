@@ -11,21 +11,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.gray-trans-back{
-    /* background-color: rgba(118, 115, 115, 0.605); */
-    background-color: #bde9e9c6;
-}
-.box-shadow{
-    box-shadow: 2px 2px 2px 2px #808080;
+/* Start Title Box */
+.white-trans-back{
+    background-color: rgba(255, 255, 255, 0.544);
 }
 .title-box{
-    /* height: 500px; */
-    height: calc(100vh - 75px);
+    height: calc(100vh - 55px);
 }
 .title-text{
     font-size: 150px;
     color: #000000;
-    text-shadow: 3px 3px rgb(56, 74, 74);
+    text-shadow: 2px 2px rgb(120, 121, 121);
 }
 .slogan{
     font-size: 15px;
@@ -63,12 +59,30 @@ body{
     animation-delay: 0.4s;
 }
 /* END Arrow down Indicators */
+/* END Title Box */
 .ux-ui{
     margin: 30px 0;
 }
 .fill{
     height: 500px;
 }
+.ux, .ui{
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 40px;
+}
+.ux{
+    background-color: black;
+    color: white;
+}
+.ui{
+    background-color: white;
+}
+.imgs{
+    height:350px;
+    width: 200px;
+}
+
 
 
 @keyframes animate{
@@ -90,7 +104,9 @@ body{
         font-size: 50px;
     }
     .ux-ui{
-        font-size: 35px;
-        
+        font-size: 35px;  
+    }
+    .ux, .ui{
+        margin: 10px 0px;
     }
 }
