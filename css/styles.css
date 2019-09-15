@@ -12,8 +12,8 @@ body{
     background-size: cover;
 }
 .trans-back{
-    background-image: linear-gradient(-80deg,rgba(45, 150, 186, 0.734), rgba(199, 36, 36, 0.734));
-    /* background-color: rgba(255, 255, 255, 0.544);*/
+    background-image: 
+    linear-gradient(-80deg,rgba(45, 150, 186, 0.734), rgba(199, 36, 36, 0.734));
 }
 /* Start Title Box */
 .title-box{
@@ -72,7 +72,6 @@ body{
 .line-height{
     line-height: 50px;
 }
-
 .img-box {
     padding: 0;
     box-shadow: 4px 4px rgba(32, 31, 31, 0.522);
@@ -83,13 +82,12 @@ body{
     height: 500px;
 }
 .overlay1, .overlay2 {
-    position: absolute;
     padding: 15px;
     height: 500px;
     opacity: 0;
     transition: .5s ease;
 }
-.brain-text{
+.white-text{
     color: #ffffff;
 }
 .overlay1{
@@ -164,7 +162,4 @@ body{
         height: 600px;
         width: 100%;
     }
-    .example{
-        margin: 20px 0px;
-    }
-    }
+}
