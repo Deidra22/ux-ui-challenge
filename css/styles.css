@@ -10,36 +10,88 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-.container-fluid{
-    margin-top: 50px;
+    &.in-transition {
+        transition: transform 9000ms ease;
+      }
 }
 .gray-trans-back{
-    background-color: rgba(128, 128, 128, 0.51);
+    background-color: rgba(118, 115, 115, 0.605);
 }
 .box-shadow{
     box-shadow: 2px 2px 2px 2px #808080;
 }
 .title-box{
-    height: 300px;
+    /* height: 500px; */
+    height: calc(100vh - 75px);
 }
 .title-text{
-    font-size: 100px;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.475);
+    font-size: 150px;
+    color: #000000;
+    text-shadow: 3px 3px rgb(144, 140, 140);
 }
 .slogan{
     font-size: 15px;
 }
-.nav{
-    margin-top: 25px;
+/* Arrow down Indicators */
+.indicator{
+    /* z-index: 10; */
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    bottom: 4vh;
 }
-a.nav-link{
-    color: white;
+.indicator span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    animation: animate 1s linear infinite;
+}
+.indicator span:nth-child(1){
+    top: -10px;
+    left: -10px;
+    animation-delay: 0s;
+}
+.indicator span:nth-child(2){
+    top: -5px;
+    left: -5px;
+    animation-delay: 0.2s;
+}
+.indicator span:nth-child(3){
+    top: 0px;
+    left: 0px;
+    animation-delay: 0.4s;
+}
+/* END Arrow down Indicators */
+.ux-ui{
+    height: 500px;
+}
+.fill{
+    height: 200px;
 }
 
 
+@keyframes animate{
+    0%{
+        border-color: #ffffff;
+        transform: translate(0,0);
+    }
+    20%{
+        border-color: #222;
+        transform: translate(5px,5px);
+    }
+    20.1%, 100%{
+        border-color: #222;
+    }
+}
 
 @media only screen and (max-width: 600px){
+    .title-box{
+        
+    }
     .title-text{
         font-size: 50px;
     }

@@ -12,7 +12,28 @@
 
 <body>
     <div class="container-fluid">
-        <div class="gray-trans-back title-box box-shadow container d-flex flex-column justify-content-center">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg row navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- NavBar End -->
+        <div class="gray-trans-back title-box row d-flex flex-column justify-content-center">
             <div class="d-flex flex-column align-items-center">
                 <div class="title-text font-weight-bold">
                     Firm Design
@@ -21,25 +42,21 @@
                     Making sure your impact is grounbreaking
                 </div>
             </div>
+            <a class="indicator js-btn d-flex flex-column align-self-center">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-        <!-- NavBar -->
-        <div class="container">
-            <ul class="nav gray-trans-back box-shadow d-flex justify-content-around">
-                <li class="nav-item nav-btn">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item nav-btn">
-                    <a class="nav-link" href="#">Portfolio</a>
-                </li>
-                <li class="nav-item nav-btn">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
+        <div class=" fill">
+
         </div>
-        <!-- NavBar End -->
+       <div class="js-section">
+        YAY
+       </div>
+
 
     </div>
-    <script src="js/scripts.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -49,6 +66,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 
