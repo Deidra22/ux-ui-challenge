@@ -3,7 +3,7 @@
 
 body{
     background-image: url("/img/marble.jpg");
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Merriweather', serif;
     /*parallax*/
     background-attachment: fixed;
@@ -14,6 +14,9 @@ body{
 .trans-back{
     background-image: 
     linear-gradient(-80deg,rgba(45, 150, 186, 0.734), rgba(199, 36, 36, 0.734));
+}
+.white-text{
+    color: #ffffff;
 }
 /* Start Title Box */
 .title-box{
@@ -87,9 +90,6 @@ body{
     opacity: 0;
     transition: .5s ease;
 }
-.white-text{
-    color: #ffffff;
-}
 .overlay1{
     background-color: rgba(45, 150, 186, 0.734);
 }
@@ -104,18 +104,30 @@ body{
 }
 /* END UX UI HOVER */
 .white-trans{
-    background-color: rgba(255, 255, 255, 0.68);
+    background-color: rgba(255, 255, 255, 0.292);
 }
+/* Example Section */
 .example{
     height: 400px;
     padding: 0;
 }
+.bad-lines{
+    background-color: rgba(255, 255, 255, 0.489);
+    height: 400px;
+}
+.bad-ui{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* End Example */
 /* Contact Form */
 .contact-form{
     background-color: #000000;
     color: #ffffff;
     padding: 30px;
 }
+/* End Examples */
 /* END Contact Form */
 .footer{
     height: 200px;
@@ -146,7 +158,6 @@ body{
     }
     .img-box{
         box-shadow: none;
-
     }
     .image {
         margin-top: 20px;
@@ -158,8 +169,20 @@ body{
         height: 300px;
         width: 300px;
       }
+      .example{
+        height: 175px;
+    }
+    .bad-lines{
+        line-height: 35px;
+        font-size: 20px;
+        margin-top: 50px;
+        height: 200px;
+    }
       .dev-img{
         height: 600px;
         width: 100%;
+    }
+    .contact-form{
+        margin-top: 700px;
     }
 }
