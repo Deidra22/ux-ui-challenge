@@ -3,7 +3,7 @@
 
 body{
     background-image: url("/img/marble.jpg");
-    height: 100vh;
+    /* height: 100vh; */
     font-family: 'Merriweather', serif;
     /*parallax*/
     background-attachment: fixed;
@@ -11,36 +11,182 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.container-fluid{
-    margin-top: 50px;
+.trans-back{
+    background-image: 
+    linear-gradient(-80deg,rgba(45, 150, 186, 0.734), rgba(199, 36, 36, 0.734));
 }
-.gray-trans-back{
-    background-color: rgba(128, 128, 128, 0.51);
+.white-text{
+    color: #ffffff;
 }
-.box-shadow{
-    box-shadow: 2px 2px 2px 2px #808080;
-}
+/* Start Title Box */
 .title-box{
-    height: 300px;
+    height: calc(100vh - 55px);
 }
 .title-text{
-    font-size: 100px;
-    text-shadow: 2px 2px rgba(255, 255, 255, 0.475);
+    font-size: 150px;
+    color: #ffffff;
+    text-shadow: 2px 2px rgb(0, 0, 0);
 }
 .slogan{
-    font-size: 15px;
+    font-size: 25px;
+    color: #ffffff;
 }
-.nav{
-    margin-top: 25px;
+/* Arrow down Indicators */
+.indicator{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    bottom: 4vh;
 }
-a.nav-link{
-    color: white;
+.indicator span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    animation: animate 2s linear infinite;
+}
+.indicator span:nth-child(1){
+    top: -10px;
+    left: -10px;
+    animation-delay: 0s;
+}
+.indicator span:nth-child(2){
+    top: -5px;
+    left: -5px;
+    animation-delay: 0.2s;
+}
+.indicator span:nth-child(3){
+    top: 0px;
+    left: 0px;
+    animation-delay: 0.4s;
+}
+/* END Arrow down Indicators */
+/* END Title Box */
+.margin-60{
+    margin: 60px 0px;
+}
+.b-rad-3{
+    border-radius: 3px;
+}
+/*UX UI HOVER */
+.line-height{
+    line-height: 50px;
+}
+.img-box {
+    padding: 0;
+    box-shadow: 4px 4px rgba(32, 31, 31, 0.522);
+}
+.image {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+.overlay1, .overlay2 {
+    padding: 15px;
+    height: 500px;
+    opacity: 0;
+    transition: .5s ease;
+}
+.overlay1{
+    background-color: rgba(45, 150, 186, 0.734);
+}
+.img-box:hover .overlay1 {
+    opacity: 1;
+}
+.overlay2 {
+    background-color: rgba(199, 36, 36, 0.734);
+}
+.img-box:hover .overlay2 {
+    opacity: 1;
+}
+/* END UX UI HOVER */
+.white-trans{
+    background-color: rgba(255, 255, 255, 0.292);
+}
+/* Example Section */
+.example{
+    height: 400px;
+    padding: 0;
+}
+.bad-lines{
+    background-color: rgba(255, 255, 255, 0.489);
+    height: 400px;
+}
+.bad-ui{
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* End Example */
+/* Contact Form */
+.contact-margin{
+    margin-top: 20px;
+}
+.contact-form{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+}
+/* End Examples */
+/* END Contact Form */
+.footer{
+    height: 150px;
+    background-color: #343a40;
 }
 
 
+@keyframes animate{
+    0%{
+        border-color: #ffffff;
+        transform: translate(0,0);
+    }
+    20%{
+        border-color: #222;
+        transform: translate(5px,5px);
+    }
+    20.1%, 100%{
+        border-color: #222;
+    }
+}
 
 @media only screen and (max-width: 600px){
     .title-text{
         font-size: 50px;
+    }
+    .line-height{
+        line-height: 30px;
+    }
+    .img-box{
+        box-shadow: none;
+    }
+    .image {
+        margin-top: 20px;
+        height: 300px;
+        width: 300px;
+      }
+    .overlay1, .overlay2 {
+        margin-top: 20px;
+        height: 300px;
+        width: 300px;
+      }
+      .example{
+        height: 175px;
+    }
+    .bad-lines{
+        line-height: 35px;
+        font-size: 20px;
+        margin-top: 50px;
+        height: 200px;
+    }
+      .dev-img{
+        height: 600px;
+        width: 100%;
+        margin-top: 700px;
+    }
+    .contact-margin{
+        margin-top: 50px;
     }
 }
